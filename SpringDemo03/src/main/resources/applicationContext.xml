@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context-4.1.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop-4.1.xsd
+">
+
+    <context:component-scan base-package="com.hisoft" />
+<!--    启用增强注解-->
+    <aop:aspectj-autoproxy />
+
+<!--    <bean name="manyData" class="com.hisoft.Many">-->
+
+<!--        &lt;!&ndash;        注入特殊字符&ndash;&gt;-->
+<!--        <property name="name" value="&amp;&amp;"/>-->
+<!--        <property name="arrays">-->
+<!--            <array>-->
+<!--                <value>123</value>-->
+<!--                <value>abc</value>-->
+<!--                <value>dfg</value>-->
+<!--                <value>ad</value>-->
+<!--                <value>adc</value>-->
+<!--            </array>-->
+<!--        </property>-->
+<!--        <property name="list">-->
+<!--            <list>-->
+<!--                <value>xdm</value>-->
+<!--                <value>hxd</value>-->
+<!--                <value>xd</value>-->
+<!--                <value>xdm</value>-->
+<!--                <value>xdm</value>-->
+<!--            </list>-->
+<!--        </property>-->
+<!--        <property name="set">-->
+<!--            <set>-->
+<!--                <value>1</value>-->
+<!--                <value>2</value>-->
+<!--                <value>3</value>-->
+<!--                <value>4</value>-->
+<!--            </set>-->
+<!--        </property>-->
+<!--        <property name="map">-->
+<!--            <map>-->
+<!--                <entry key="1" value="1"/>-->
+<!--                <entry key="2" value="1"/>-->
+<!--                <entry key="3" value="1"/>-->
+<!--                <entry key="4" value="1"/>-->
+<!--            </map>-->
+<!--        </property>-->
+
+<!--        <property name="nullValue">-->
+<!--            &lt;!&ndash;            空值注入&ndash;&gt;-->
+<!--            &lt;!&ndash;            <null/>&ndash;&gt;-->
+<!--            &lt;!&ndash;注入空字符串&ndash;&gt;-->
+<!--            <value></value>-->
+<!--        </property>-->
+
+<!--        <property name="properties">-->
+<!--            <props>-->
+<!--                <prop key="name">胖虎</prop>-->
+<!--                <prop key="friend1">静香</prop>-->
+<!--            </props>-->
+<!--        </property>-->
+
+<!--        <property name="person">-->
+<!--            <bean class="com.hisoft.Person">-->
+<!--                <property name="name" value="波妞"/>-->
+<!--            </bean>-->
+<!--        </property>-->
+
+<!--        <property name="strings">-->
+<!--            <array>-->
+<!--                <array>-->
+<!--                    <value>123</value>-->
+<!--                    <value>123</value>-->
+<!--                    <value>123</value>-->
+
+<!--                </array>-->
+<!--                <array>-->
+<!--                    <value>3123</value>-->
+<!--                    <value>3123</value>-->
+<!--                    <value>3123</value>-->
+<!--                </array>-->
+<!--            </array>-->
+<!--        </property>-->
+
+
+<!--    </bean>-->
+    <bean name="arrays">
+        <property name="props">
+            <props>
+                <prop key=""></prop>
+            </props>
+        </property>
+    </bean>
+</beans>

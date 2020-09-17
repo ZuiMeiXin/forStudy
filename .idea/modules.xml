@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SpringDemo/SpringDemo.iml" filepath="$PROJECT_DIR$/SpringDemo/SpringDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringDemo02/SpringDemo02.iml" filepath="$PROJECT_DIR$/SpringDemo02/SpringDemo02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringDemo03/SpringDemo03.iml" filepath="$PROJECT_DIR$/SpringDemo03/SpringDemo03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringMvcDemo01/SpringMvcDemo01.iml" filepath="$PROJECT_DIR$/SpringMvcDemo01/SpringMvcDemo01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ajaxDemo/ajaxDemo.iml" filepath="$PROJECT_DIR$/ajaxDemo/ajaxDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bootstrap01/bootstrap01.iml" filepath="$PROJECT_DIR$/bootstrap01/bootstrap01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaTest/javaTest.iml" filepath="$PROJECT_DIR$/javaTest/javaTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jedisDemo/jedisDemo.iml" filepath="$PROJECT_DIR$/jedisDemo/jedisDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/layuiDemo/layuiDemo.iml" filepath="$PROJECT_DIR$/layuiDemo/layuiDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mavenMybatisSpring/mavenMybatisSpring.iml" filepath="$PROJECT_DIR$/mavenMybatisSpring/mavenMybatisSpring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mavenMybatisSpringJndi/mavenMybatisSpringJndi.iml" filepath="$PROJECT_DIR$/mavenMybatisSpringJndi/mavenMybatisSpringJndi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mavensmbms/mavensmbms.iml" filepath="$PROJECT_DIR$/mavensmbms/mavensmbms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/maventest/maventest.iml" filepath="$PROJECT_DIR$/maventest/maventest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myProject.iml" filepath="$PROJECT_DIR$/myProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/news/news.iml" filepath="$PROJECT_DIR$/news/news.iml" />
+      <module fileurl="file://$PROJECT_DIR$/servletDemo/servletDemo.iml" filepath="$PROJECT_DIR$/servletDemo/servletDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/severlettest/severlettest.iml" filepath="$PROJECT_DIR$/severlettest/severlettest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/smbms/smbms.iml" filepath="$PROJECT_DIR$/smbms/smbms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/webdemo01/webdemo01.iml" filepath="$PROJECT_DIR$/webdemo01/webdemo01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/webdemo02/webdemo02.iml" filepath="$PROJECT_DIR$/webdemo02/webdemo02.iml" />
+    </modules>
+  </component>
+</project>

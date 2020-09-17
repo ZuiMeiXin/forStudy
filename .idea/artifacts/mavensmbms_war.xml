@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="mavensmbms:war">
+    <output-path>$PROJECT_DIR$/mavensmbms/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>mavensmbms</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="mavensmbms-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="mavensmbms:war exploded" />
+    </root>
+  </artifact>
+</component>

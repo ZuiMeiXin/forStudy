@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context-4.1.xsd">
+
+    <!--    name 属性值可以使用多个 使用 ， ； 空格 隔开-->
+    <bean name="hello" class="com.hisoft.SpringDemo">
+        <property name="who" value="Spring"/>
+    </bean>
+
+    <!--    注入address-->
+    <bean name="address" class="com.hisoft.Address">
+        <!--        他是通过设值 set方法设值值得-->
+        <property name="id" value="1"/>
+        <property name="name" value="郑州"/>
+    </bean>
+
+    <!--    使用构造注入-->
+    <!--    使用p命名空间 注入 需要在表头中加入xmlns:p="http://www.springframework.org/schema/p"-->
+<!--    <bean id="sayInfo1" class="com.hisoft.SpringDemo02" p:name="张嘎" p:says="我不是 我没有 我没说 你别胡说" p:address-ref="address">-->
+    <bean id="sayInfo1" class="com.hisoft.SpringDemo02">
+        <!--        注入属性值-->
+        <!--        <property name="name" value="张嘎"/>-->
+        <!--        <property name="says" value="我不是 我没有 我没说 你别胡说"/>-->
+        <!--&lt;!&ndash;        <property name="address" ref="address"/>&ndash;&gt;-->
+                        <constructor-arg index="0" value="张嘎"/>
+                        <constructor-arg index="1" value="我不是 我没有 我没说 你别胡说"/>
+                        <constructor-arg index="2" ref="address"/>
+
+    </bean>
+
+
+    <bean name="sayInfo2" class="com.hisoft.SpringDemo02">
+        <!--        <property name="name" value="Rod"/>-->
+        <!--        <property name="says" value="世界上有十种人，认识二进制的和不认识二进制的"/>-->
+        <!--        <property name="address" ref="address"/>-->
+        <constructor-arg index="0" value="Rod"/>
+        <constructor-arg index="1" value="世界上有十种人，认识二进制的和不认识二进制的"/>
+        <constructor-arg index="2" ref="address"/>
+    </bean>
+
+    <!--    注入墨盒 彩色墨盒和灰色墨盒-->
+    <bean name="colorInk" class="cn.ink.ColorInk"/>
+    <bean name="greyInk" class="cn.ink.GreyInk"/>
+    <!--  A4  -->
+    <bean name="A4" class="cn.paper.TextPaper">
+        <property name="charPerLine" value="20"/>
+        <property name="linePerPage" value="30"/>
+    </bean>
+    <!--    B5-->
+    <bean name="B5" class="cn.paper.TextPaper">
+        <property name="charPerLine" value="10"/>
+        <property name="linePerPage" value="15"/>
+    </bean>
+
+    <!--  组装打印机  -->
+    <bean name="printer" class="cn.printer.Printer">
+        <property name="ink" ref="colorInk"/>
+        <property name="paper" ref="A4"/>
+    </bean>
+
+
+    <!--装备套装1-->
+    <bean name="equip1" class="com.hisoft.equip.Equip">
+        <property name="up" value="盔甲"/>
+        <property name="leg" value="护腿"/>
+        <property name="shoot" value="靴子"/>
+    </bean>
+    <bean name="equip2" class="com.hisoft.equip.Equip">
+        <property name="up" value="头盔"/>
+        <property name="leg" value="护腕"/>
+        <property name="shoot" value="护腿"/>
+    </bean>
+
+
+    <bean name="littleBlack" class="com.hisoft.user.User">
+        <property name="name" value="小黑"/>
+        <property name="equip" ref="equip2"/>
+    </bean>
+    <bean name="merman" class="com.hisoft.user.User">
+        <property name="name" value="大鱼"/>
+        <property name="equip" ref="equip1"/>
+    </bean>
+
+
+</beans>

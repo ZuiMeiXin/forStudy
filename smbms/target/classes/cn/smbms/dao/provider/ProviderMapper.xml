@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.smbms.dao.provider.ProviderMapper">
+    <insert id="add">
+        insert into smbms_provider (proCode, proName,
+                                    proDesc, proContact,
+                                    proPhone, proAddress,
+                                    proFax, createdBy,
+                                    creationDate, idPicPath,
+                                    orgCodePicPath)
+        values (#{proCode}, #{proName},
+                #{proDesc}, #{proContact},
+                #{proPhone}, #{proAddress},
+                #{proFax}, #{createdBy},
+                #{creationDate}, #{idPicPath},
+                #{orgCodePicPath})
+    </insert>
+    <update id="modify">
+        update smbms_provider
+        set proName=#{proName},
+            proDesc=#{proDesc},
+            proContact=#{proContact},
+            proPhone = #{proPhone},
+            proAddress=#{proAddress},
+            proFax=#{proFax},
+            modifyBy=#{modifyBy},
+            modifyDate=#{modifyDate}
+        where id = #{id}
+    </update>
+    <delete id="deleteProviderById">
+        delete
+        from smbms_provider
+        where id = #{delId}
+    </delete>
+    <select id="getProviderById" resultType="cn.smbms.pojo.Provider">
+        select *
+        from smbms_provider
+        where id = #{id}
+    </select>
+    <select id="getProviderList" resultType="cn.smbms.pojo.Provider">
+        select *
+        from smbms_provider
+        <where>
+            1=1
+            <if test="proName != null and proName != ''">
+                and proName like concat('%',#{proName},'%')
+            </if>
+
+            <if test="proCode != null and proCode != ''">
+                and proCode like concat('%',#{proCode},'%')
+            </if>
+
+        </where>
+    </select>
+
+
+</mapper>

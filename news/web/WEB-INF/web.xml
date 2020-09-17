@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+         http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+
+
+    <!--  upwd-->
+    <servlet>
+        <servlet-name>TopicServlet</servlet-name>
+        <servlet-class>com.hisoft.news.web.TopicServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TopicServlet</servlet-name>
+        <url-pattern>/topic.control</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>dologinServlet</servlet-name>
+        <servlet-class>com.hisoft.news.web.dologinServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>dologinServlet</servlet-name>
+        <url-pattern>/dologin.control</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>NewsServlet</servlet-name>
+        <servlet-class>com.hisoft.news.web.NewsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>NewsServlet</servlet-name>
+        <url-pattern>/news.control</url-pattern>
+    </servlet-mapping>
+
+
+    <!--    过滤器配置-->
+    <filter>
+        <filter-name>CheckUserLogin</filter-name>
+        <filter-class>com.hisoft.news.filter.CheckUserLogin</filter-class>
+        <init-param>
+            <param-name>charset</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>CheckUserLogin</filter-name>
+        <url-pattern>/newspages/*</url-pattern>
+    </filter-mapping>
+
+
+    <!--    监听器配置-->
+    <listener>
+        <listener-class>com.hisoft.news.listener.ServletContextListenerImpl</listener-class>
+    </listener>
+
+
+    <display-name></display-name>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>

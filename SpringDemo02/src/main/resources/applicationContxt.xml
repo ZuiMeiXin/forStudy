@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context-4.1.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop-4.1.xsd
+">
+
+
+    <!--    使用注释注解 引入扫描-->
+    <context:component-scan base-package="com.hisoft"/>
+
+
+    <!--    &lt;!&ndash;注入user&ndash;&gt;-->
+    <!--    <bean name="user" class="com.hisoft.pojo.User">-->
+    <!--        <property name="id" value="1"/>-->
+    <!--        <property name="name" value="小呆呆"/>-->
+    <!--    </bean>-->
+
+    <!--    &lt;!&ndash;    注入增强&ndash;&gt;-->
+    <!--    <bean name="logger" class="com.hisoft.logger.ServiceLogger->
+
+     注入userDao&ndash;&gt;
+       <bean name="userDao" class="com.hisoft.dao.user.UserDaoImpl"/>-->
+    <!--    &lt;!&ndash;    注入UserService&ndash;&gt;-->
+    <!--    &lt;!&ndash;    <bean name="userService" class="com.hisoft.service.UserServiceImpl">&ndash;&gt;-->
+    <!--    &lt;!&ndash;        <property name="userDao" ref="userDao"/>&ndash;&gt;-->
+    <!--    &lt;!&ndash;    </bean>&ndash;&gt;-->
+    <!--    <bean name="userService" class="com.hisoft.service.UserServiceImpl" p:userDao-ref="userDao"/>-->
+    <!--    &lt;!&ndash;    AOp 引入aop命名空间&ndash;&gt;-->
+    <!--    <aop:config>-->
+    <!--        &lt;!&ndash;        切入点&ndash;&gt;-->
+    <!--        <aop:pointcut id="pointcut" expression="execution(public * com.hisoft.service..*.*(..))"/>-->
+    <!--        &lt;!&ndash;切面（切入点+增强+连接点，切入时机） 要引入增强&ndash;&gt;-->
+    <!--        <aop:aspect ref="logger">-->
+    <!--            &lt;!&ndash;            前置增强&ndash;&gt;-->
+    <!--            &lt;!&ndash;            <aop:before method="before" pointcut-ref="pointcut"/>&ndash;&gt;-->
+    <!--            &lt;!&ndash;            &ndash;&gt;-->
+    <!--            &lt;!&ndash;            <aop:after-returning method="afterReturning" pointcut-ref="pointcut" returning="result"/>&ndash;&gt;-->
+    <!--            &lt;!&ndash;            抛出异常增强&ndash;&gt;-->
+    <!--            &lt;!&ndash;            <aop:after-throwing method="afterThrowing" pointcut-ref="pointcut" throwing="e"/>&ndash;&gt;-->
+    <!--            &lt;!&ndash;            最终增强&ndash;&gt;-->
+    <!--            &lt;!&ndash;            <aop:after method="after" pointcut-ref="pointcut"/>&ndash;&gt;-->
+    <!--            &lt;!&ndash;环绕增强&ndash;&gt;-->
+    <!--            <aop:around method="around" pointcut-ref="pointcut"/>-->
+
+    <!--    启用增强注解-->
+    <aop:aspectj-autoproxy/>
+    <!--        </aop:aspect>-->
+    <!--    </aop:config>-->
+
+
+</beans>

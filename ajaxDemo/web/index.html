@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+</head>
+<body>
+注册邮箱：<input type="text" name="email" id="email" onkeyup="check()"/><span id="span"></span><br>
+用户名：<input type="text" id="username" name="username"><br>
+密码：<input type="password"><br>
+
+<script src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+    // function check() {
+    // var email = document.getElementById("email").value;
+    // //创建XMLHttpRequest对象
+    // var xhr = new XMLHttpRequest();
+    // //创建请求
+    // xhr.open("get", "checkservlet.do?email=" + email);
+    // //回调函数
+    // xhr.onreadystatechange = callback;
+    // //发送请求
+    // xhr.send(null);
+
+    // }
+    //
+    // function callback() {
+    //     if (xhr.readyState == 4 && xhr.status == 200) {
+    //         var result = xhr.responseText;
+    //         console.log(typeof result);
+    //         if ("邮箱已经存在" == result){
+    //             console.log(123);
+    //             document.getElementById("span").style.color="red";
+    //         }
+    //         document.getElementById("span").innerHTML = result;
+    //     }
+    // }
+
+
+    function check() {
+        let email = document.getElementById("email").value;
+        // $.ajax({
+        //     "url": "checkservlet.do",
+        //     "type": "get",
+        //     "data": "email=" + email,
+        //     "dataType": "text",
+        //     "success": callback,
+        //     "error": function () {
+        //         alert("请求失败");
+        //     }
+        // });
+
+        // $.get("checkservlet.do","email=" + email,callback);
+        $.post("checkservlet.do","email=" + email,callback);
+
+
+        function callback(data) {
+            console.log(data)
+            document.getElementById("span").innerHTML = data;
+        }
+    }
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hisoft.springmybatis.dao.role.RoleMapper">
+    <insert id="addRole">
+        insert into smbms_role(roleCode, roleName, createdBy, creationDate)
+        values (#{roleCode}, #{roleName}, #{createdBy}, #{creationDate})
+    </insert>
+
+
+    <select id="getRoleByName" resultType="com.hisoft.springmybatis.pojo.Role">
+        select *
+        from smbms_role
+        where roleName like concat('%', #{roleName}, '%')
+    </select>
+</mapper>

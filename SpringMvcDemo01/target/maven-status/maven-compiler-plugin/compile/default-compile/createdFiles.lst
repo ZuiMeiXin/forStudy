@@ -1,0 +1,4 @@
+com\hisoft\controller\ProviderController.class
+com\hisoft\entity\Provider.class
+com\hisoft\controller\HelloController.class
+com\hisoft\filter\CharacterFilter.class

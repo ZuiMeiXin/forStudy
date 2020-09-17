@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hisoft.springmybatis.dao.bill.BillMapper">
+
+
+    <select id="getBillList" resultType="Bill">
+        select *
+        from smbms_bill
+    </select>
+
+    <resultMap id="billResultMap" type="Bill">
+        <result property="productName" column="productName"/>
+        <result property="billCode" column="billCode"/>
+        <result property="isPayment" column="isPayment"/>
+        <result property="creationDate" column="creationDate"/>
+
+    </resultMap>
+
+    <resultMap id="resultBillMap" type="Bill">
+        <result property="id" column="id"/>
+        <result property="billCode" column="billCode"/>
+        <result property="productName" column="productName"/>
+        <result property="providerId" column="providerId"/>
+        <result property="totalPrice" column="totalPrice"/>
+        <result property="isPayment" column="isPayment"/>
+        <association property="provider" javaType="Provider" resultMap="providerResultMap"/>
+    </resultMap>
+
+    <resultMap id="providerResultMap" type="Provider">
+        <id property="id" column="id"/>
+        <result property="proCode" column="proCode"/>
+        <result property="proContact" column="proContact"/>
+        <result property="proName" column="proName"/>
+        <result property="proPhone" column="proPhone"/>
+    </resultMap>
+    <select id="getBillListByMap" resultMap="resultBillMap">
+        select b.*, p.*
+        from smbms_bill b,
+        smbms_provider p
+        <where>
+            <if test="productName != null and productName !=''">
+                b.productName like concat('%', #{productName}, '%')
+            </if>
+            <if test="providerId != null">
+                and b.providerId = #{providerId}
+            </if>
+            <if test="isPayment != null">
+                and b.isPayment = #{isPayment}
+            </if>
+            and b.providerId = p.id
+        </where>
+        order by b.creationDate desc
+    </select>
+</mapper>

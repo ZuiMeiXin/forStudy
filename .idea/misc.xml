@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/mavenMybatisSpringJndi" />
+    <file type="web" url="file://$PROJECT_DIR$/mavensmbms" />
+    <file type="web" url="file://$PROJECT_DIR$/smbms" />
+    <file type="web" url="file://$PROJECT_DIR$/SpringMvcDemo01" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/smbms/pom.xml" />
+        <option value="$PROJECT_DIR$/maventest/pom.xml" />
+        <option value="$PROJECT_DIR$/mavensmbms/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringDemo02/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringDemo03/pom.xml" />
+        <option value="$PROJECT_DIR$/mavenMybatisSpring/pom.xml" />
+        <option value="$PROJECT_DIR$/mavenMybatisSpringJndi/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringMvcDemo01/pom.xml" />
+        <option value="$PROJECT_DIR$/jedisDemo/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8 (2)" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

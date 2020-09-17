@@ -1,0 +1,3 @@
+0:0:0:0:0:0:0:1 - - [28/Aug/2020:19:40:48 +0800] "GET /SpringMvcDemo01/ HTTP/1.1" 200 347 http-bio-8080-exec-1 515
+0:0:0:0:0:0:0:1 - - [28/Aug/2020:19:40:50 +0800] "GET /SpringMvcDemo01/provider.jsp HTTP/1.1" 200 750 http-bio-8080-exec-4 46
+0:0:0:0:0:0:0:1 - - [28/Aug/2020:19:40:56 +0800] "POST /SpringMvcDemo01/provider/showProvider.html HTTP/1.1" 200 446 http-bio-8080-exec-5 249

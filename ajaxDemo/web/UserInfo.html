@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>json数据展示</title>
+    <style>
+        td{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<div id="tablediv"></div>
+<select name="" id="selectinfo"></select>
+
+<script src="js/jquery-1.8.3.min.js"></script>
+<script>
+
+    var users = [{
+        "id": "1",
+        "name": "admin",
+        "address": "北京市海淀区",
+        "phone": "123456"
+    }, {
+        "id": "2",
+        "name": "梅西",
+        "address": "湖北省武汉市",
+        "phone": "123456"
+    }, {
+        "id": "3",
+        "name": "詹姆斯",
+        "address": "四川省成都市",
+        "phone": "123456"
+    }, {
+        "id": "4",
+        "name": "德丽莎",
+        "address": "广东省广州市",
+        "phone": "123456"
+    }]
+
+    var $table = $("<table ></table>");
+    $table.append("<tr><td>ID</td><td>姓名</td><td>住址</td><td>手机</td></tr>")
+    for (let i = 0; i < users.length; i++) {
+        $table.append("<tr><td>" + users[i].id + "</td><td>" + users[i].name + "</td><td>" + users[i].address + "</td><td>" + users[i].phone + "</td></tr>")
+    }
+
+    $("#tablediv").append($table);
+
+
+    for (let i = 0; i < users.length; i++) {
+        $("#selectinfo").append("<option>" + users[i].id + "-"  + users[i].name + "-"  + users[i].address + "-"  + users[i].phone + "</option>")
+    }
+
+
+</script>
+</body>
+</html>

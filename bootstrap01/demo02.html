@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .inner {
+            border: 1px red solid;
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid">
+    <!--    <div class="row" style="border: 1px red solid">-->
+    <!--        <div class="col-md-1" style="border: black 1px solid">col-md-1</div>-->
+    <!--        <div class="col-md-1" style="border: black 1px solid">col-md-1</div>-->
+    <!--        <div class="col-md-1" style="border: black 1px solid">col-md-1</div>-->
+    <!--        <div class="col-md-1" style="border: black 1px solid">col-md-1</div>-->
+    <!--        <div class="col-md-1" style="border: black 1px solid">col-md-1</div>-->
+    <!--        <div class="col-md-1" style="border: black 1px solid">col-md-1</div>-->
+    <!--        <div class="col-md-1" style="border: black 1px solid">col-md-1</div>-->
+    <!--        <div class="col-md-1" style="border: black 1px solid">col-md-1</div>-->
+    <!--        <div class="col-md-1" style="border: black 1px solid">col-md-1</div>-->
+    <!--        <div class="col-md-1" style="border: black 1px solid">col-md-1</div>-->
+    <!--        <div class="col-md-1" style="border: black 1px solid">col-md-1</div>-->
+    <!--        <div class="col-md-1" style="border: black 1px solid">col-md-1</div>-->
+    <!--    </div>-->
+    <!--    <div class="row" style="border: 1px solid red">-->
+    <!--        <div class="col-md-8" style="border: 1px solid yellow">col-md-8</div>-->
+    <!--        <div class="col-md-4" style="border: 1px solid yellow">col-md-4</div>-->
+    <!--    </div>-->
+
+    <div class="row" style="border: 1px solid red">
+        <div class="col-xs-12  col-md-8 inner h3">col-xs-12col-md-8</div>
+        <div class="col-xs-6 col-md-4 inner">col-xs-6 col-md-4</div>
+    </div>
+
+    <div class="inner">
+        <p>这是一个普通的文本域</p>
+        <p class="lead">这是一个普通的文本域使用lead类让段落突出显示</p>
+        <p>You can use the mark tag to
+            <mark>highlight</mark>
+            text 使用mark标签高亮显示
+        </p>
+        <p>You can use the mark tag to
+            <del>delete</del>
+            text 使用del标签显示被删除的文本
+        </p>
+        <p>You can use the mark tag to
+            <ins>insert</ins>
+            text 使用ins标签显示插入文本
+        </p>
+        <p>You can use the mark tag to <kbd>kbdCode</kbd> text 使用del标签显示代码文本</p>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered table-hover table-condensed table-responsive ">
+            <tr class="success">
+                <td>success</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr class="active">
+                <td>active</td>
+                <td>2</td>
+                <td>1</td>
+            </tr>
+            <tr class="warning">
+                <td>warning</td>
+                <td>2</td>
+                <td>1</td>
+            </tr>
+            <tr class="info">
+                <td>info</td>
+                <td>2</td>
+                <td>1</td>
+            </tr>
+            <tr class="danger">
+                <td>danger</td>
+                <td>2</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>2</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>2</td>
+                <td>1</td>
+            </tr>
+
+        </table>
+    </div>
+
+    <form class="form-horizontal col-lg-4">
+        <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">邮箱</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">密码</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"> 选中
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">提交</button>
+            </div>
+        </div>
+    </form>
+
+    <a class="btn btn-default" href="#" role="button">Link</a>
+    <button class="btn btn-default" type="submit">Button</button>
+    <input class="btn btn-default" type="button" value="Input">
+    <input class="btn btn-default" type="submit" value="Submit">
+
+
+    <br>
+    <img src="img/01.jpg" width="200px" height="200px" class="img-thumbnail">
+    <img src="img/01.jpg" width="200px" height="200px" class="img-circle">
+    <img src="img/01.jpg" width="200px" height="200px" class="img-rounded">
+
+</div>
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
