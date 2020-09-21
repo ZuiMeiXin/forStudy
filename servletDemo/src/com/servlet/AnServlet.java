@@ -17,7 +17,7 @@ public class AnServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("utf-8");
         response.setContentType("text/html;charset=utf-8");
-        response.getWriter().println("welcome third demo");
+        response.getWriter().println("welcome third demo this is a listener");
 
     }
 }

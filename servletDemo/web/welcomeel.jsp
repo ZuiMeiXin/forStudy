@@ -1,4 +1,4 @@
-<%@ page import="com.servlet.entity.People" %><%--
+    <%@ page import="com.servlet.entity.People" %><%--
   Created by IntelliJ IDEA.
   User: HiSoft
   Date: 2020/8/4
