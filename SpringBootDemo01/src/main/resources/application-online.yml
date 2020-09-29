@@ -1,0 +1,5 @@
+#tomcat配置
+#server:
+#  port: 8886
+#  servlet:
+#    context-path: /springbootdemo

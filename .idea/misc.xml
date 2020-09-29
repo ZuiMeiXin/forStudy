@@ -19,6 +19,10 @@
         <option value="$PROJECT_DIR$/mavenMybatisSpringJndi/pom.xml" />
         <option value="$PROJECT_DIR$/SpringMvcDemo01/pom.xml" />
         <option value="$PROJECT_DIR$/jedisDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatisRedisDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/SmsApiDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBootDemo01/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBootDemo02/pom.xml" />
       </list>
     </option>
   </component>

@@ -1,0 +1,22 @@
+#热部署
+#spring:
+#  devtools:
+#    restart:
+#      enabled: true
+#      additional-paths: src/main/resources,src/main/java
+#      exclude: /WEB-INF/**
+#  #环境选择
+#  profile:
+#    active: online
+
+
+
+
+name: xiaodai
+url: www.118.system.hahu.edu.com
+
+
+
+
+
+

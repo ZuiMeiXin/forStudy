@@ -92,4 +92,11 @@
 
 
 <!--    </bean>-->
+    <bean name="arrays">
+        <property name="props">
+            <props>
+                <prop key=""></prop>
+            </props>
+        </property>
+    </bean>
 </beans>

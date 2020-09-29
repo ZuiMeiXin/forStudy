@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hisoft.redis.dao.user.UserMapper">
+    <cache type="com.hisoft.redis.cache.RedisCache"></cache>
+
+    <select id="getUserList" resultType="com.hisoft.redis.pojo.User">
+        select userCode, userName, gender
+        from smbms_user limit 3
+    </select>
+</mapper>

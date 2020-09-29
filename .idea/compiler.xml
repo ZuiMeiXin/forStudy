@@ -6,16 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="mavensmbms" />
+        <module name="maventest" />
         <module name="mavenMybatisSpringJndi" />
         <module name="jedisDemo" />
-        <module name="SpringDemo" />
-        <module name="SpringDemo02" />
+        <module name="mybatisRedisDemo" />
+        <module name="SmsApiDemo" />
         <module name="SpringDemo03" />
-        <module name="maventest" />
-        <module name="smbms" />
+        <module name="SpringDemo02" />
         <module name="SpringMvcDemo01" />
         <module name="mavenMybatisSpring" />
-        <module name="mavensmbms" />
+        <module name="smbms" />
+        <module name="SpringDemo" />
+        <module name="SpringBootDemo02" />
+        <module name="SpringBootDemo01" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -24,13 +28,23 @@
       <module name="mavenMybatisSpringJndi" target="1.8" />
       <module name="mavensmbms" target="1.8" />
       <module name="maventest" target="1.8" />
+      <module name="mybatisRedisDemo" target="1.8" />
       <module name="smbms" target="1.8" />
       <module name="smbms01" target="1.8" />
+      <module name="SmsApiDemo" target="1.8" />
+      <module name="SpringBootDemo01" target="1.8" />
+      <module name="SpringBootDemo02" target="1.8" />
       <module name="SpringDemo" target="1.8" />
       <module name="SpringDemo02" target="1.8" />
       <module name="SpringDemo03" target="1.8" />
       <module name="SpringMvcDemo01" target="1.8" />
-      <module name="untitled" target="1.5" />
+      <module name="untitled" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="SpringBootDemo01" options="-parameters" />
+      <module name="SpringBootDemo02" options="-parameters" />
+    </option>
   </component>
 </project>

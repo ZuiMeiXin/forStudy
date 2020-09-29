@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/SmsApiDemo/SmsApiDemo.iml" filepath="$PROJECT_DIR$/SmsApiDemo/SmsApiDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringBootDemo01/SpringBootDemo01.iml" filepath="$PROJECT_DIR$/SpringBootDemo01/SpringBootDemo01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringBootDemo02/SpringBootDemo02.iml" filepath="$PROJECT_DIR$/SpringBootDemo02/SpringBootDemo02.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringDemo/SpringDemo.iml" filepath="$PROJECT_DIR$/SpringDemo/SpringDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringDemo02/SpringDemo02.iml" filepath="$PROJECT_DIR$/SpringDemo02/SpringDemo02.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringDemo03/SpringDemo03.iml" filepath="$PROJECT_DIR$/SpringDemo03/SpringDemo03.iml" />
@@ -16,6 +19,7 @@
       <module fileurl="file://$PROJECT_DIR$/mavensmbms/mavensmbms.iml" filepath="$PROJECT_DIR$/mavensmbms/mavensmbms.iml" />
       <module fileurl="file://$PROJECT_DIR$/maventest/maventest.iml" filepath="$PROJECT_DIR$/maventest/maventest.iml" />
       <module fileurl="file://$PROJECT_DIR$/myProject.iml" filepath="$PROJECT_DIR$/myProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatisRedisDemo/mybatisRedisDemo.iml" filepath="$PROJECT_DIR$/mybatisRedisDemo/mybatisRedisDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/news/news.iml" filepath="$PROJECT_DIR$/news/news.iml" />
       <module fileurl="file://$PROJECT_DIR$/servletDemo/servletDemo.iml" filepath="$PROJECT_DIR$/servletDemo/servletDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/severlettest/severlettest.iml" filepath="$PROJECT_DIR$/severlettest/severlettest.iml" />
