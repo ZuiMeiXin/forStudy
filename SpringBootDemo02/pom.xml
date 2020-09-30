@@ -13,11 +13,5 @@
         <version>2.2.1.RELEASE</version>
     </parent>
     <!--添加springboot依赖-->
-    <dependencies>
-        <dependency>
-            <groupId></groupId>
-            <artifactId></artifactId>
-        </dependency>
-    </dependencies>
 
 </project>

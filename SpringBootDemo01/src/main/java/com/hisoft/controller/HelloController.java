@@ -6,6 +6,8 @@ import org.springframework.core.env.Environment;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.annotation.Resource;
+
 //相当于 @Controller+@ResponseBody
 @RestController
 public class HelloController {
@@ -14,14 +16,14 @@ public class HelloController {
     两种方式获取配置文件中的属性值
      */
     //第一种 使用Environment对象  getproperty(key)方法获取
-    @Autowired
+    @Resource
     private Environment environment;
 
     //第二种 直接使用value获取
-    @Value("${name}")
-    private String name;
-    @Value("${url}")
-    private String url;
+//    @Value("${name}")
+//    private String name;
+//    @Value("${url}")
+//    private String url;
 
     //相当于 @RequestMapping+method=Method.GET
     @GetMapping("/hello")
@@ -33,11 +35,11 @@ public class HelloController {
                 "然后添加一个资源文件   配置文件 设置重新启动为true 热部署路径  不包括的路径";
     }
 
-    @GetMapping("/show")
-    public String show() {
-        System.out.println(name + url);
-        return "" + environment.getProperty("name") + "" + environment.getProperty("url");
-    }
+//    @GetMapping("/show")
+//    public String show() {
+//        System.out.println(name + url);
+//        return "" + environment.getProperty("name") + "" + environment.getProperty("url");
+//    }
 
 
 }

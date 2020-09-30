@@ -1,6 +1,6 @@
 package com.hisoft;
 
-import com.hisoft.redis.pojo.User;
+import com.hisoft.config.pojo.User;
 import org.springframework.util.SerializationUtils;
 
 /**

@@ -14,6 +14,7 @@
 <head>
     <base href="<%=basePath%>">
     <title>首页</title>
+    <link rel="stylesheet" href="test.css">
 </head>
 <body>
 <h1>welcome ${username}</h1>

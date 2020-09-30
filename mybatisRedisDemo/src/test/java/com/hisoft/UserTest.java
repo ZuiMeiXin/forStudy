@@ -1,8 +1,8 @@
 package com.hisoft;
 
-import com.hisoft.redis.dao.user.UserMapper;
-import com.hisoft.redis.pojo.User;
-import com.hisoft.redis.service.UserService;
+import com.hisoft.config.dao.user.UserMapper;
+import com.hisoft.config.pojo.User;
+import com.hisoft.config.service.UserService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

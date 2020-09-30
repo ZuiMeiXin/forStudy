@@ -92,17 +92,17 @@
         <!--读取映射文件-->
         <property name="mapperLocations">
             <array>
-                <value>classpath:com/hisoft/redis/dao/**/*.xml</value>
+                <value>classpath:com/hisoft/config/dao/**/*.xml</value>
             </array>
         </property>
     </bean>
 
     <!--MapperScannerConfigurer 批量创建映射接口的实现类对象 注入倒容器中-->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.hisoft.redis.dao"/>
+        <property name="basePackage" value="com.hisoft.config.dao"/>
     </bean>
 
     <!--    注解扫描-->
-    <context:component-scan base-package="com.hisoft.redis"/>
+    <context:component-scan base-package="com.hisoft.config"/>
 
 </beans>
