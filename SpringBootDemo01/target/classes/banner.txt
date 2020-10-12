@@ -1,0 +1,16 @@
+ ${AnsiColor.BRIGHT_GREEN}
+
+ ${AnsiColor.BRIGHT_MAGENTA}
+          __
+         /\_\
+        / / /_
+       / /_/\ \
+      _\ \/  \ \
+     /\ \  /\ \_\
+     \ \/  \ \/_/
+      \  /\ \_\
+       \/_/ / /
+         / / /
+         \/_/
+${AnsiColor.BRIGHT_RED}
+Spring Boot Version: ${spring-boot.version}${spring-boot.formatted-version}
