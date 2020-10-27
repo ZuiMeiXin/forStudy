@@ -4,6 +4,7 @@
     <file type="web" url="file://$PROJECT_DIR$/mavenMybatisSpringJndi" />
     <file type="web" url="file://$PROJECT_DIR$/mavensmbms" />
     <file type="web" url="file://$PROJECT_DIR$/smbms" />
+    <file type="web" url="file://$PROJECT_DIR$/SpringCloudDemo01" />
     <file type="web" url="file://$PROJECT_DIR$/SpringMvcDemo01" />
   </component>
   <component name="MavenProjectsManager">
@@ -23,6 +24,7 @@
         <option value="$PROJECT_DIR$/SmsApiDemo/pom.xml" />
         <option value="$PROJECT_DIR$/SpringBootDemo01/pom.xml" />
         <option value="$PROJECT_DIR$/SpringBootDemo02/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringCloudDemo01/pom.xml" />
       </list>
     </option>
   </component>

@@ -6,19 +6,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="mavensmbms" />
         <module name="maventest" />
         <module name="mavenMybatisSpringJndi" />
-        <module name="jedisDemo" />
+        <module name="mavensmbms" />
         <module name="mybatisRedisDemo" />
         <module name="SmsApiDemo" />
+        <module name="SpringBootDemo02" />
         <module name="SpringDemo03" />
         <module name="SpringDemo02" />
         <module name="SpringMvcDemo01" />
         <module name="mavenMybatisSpring" />
         <module name="smbms" />
         <module name="SpringDemo" />
-        <module name="SpringBootDemo02" />
+        <module name="jedisDemo" />
         <module name="SpringBootDemo01" />
       </profile>
     </annotationProcessing>
@@ -34,6 +34,7 @@
       <module name="SmsApiDemo" target="1.8" />
       <module name="SpringBootDemo01" target="1.8" />
       <module name="SpringBootDemo02" target="1.8" />
+      <module name="SpringCloudDemo01" target="1.8" />
       <module name="SpringDemo" target="1.8" />
       <module name="SpringDemo02" target="1.8" />
       <module name="SpringDemo03" target="1.8" />
